@@ -9,6 +9,7 @@ data = pd.read_csv('date_data.csv')
 
 #Converting date in the Date column using the to-datetime method: replaing the strings with date values.
 data['Date'] = pd.to_datetime(data['Date'])
+
 #Sorting the date vlues by date
 data.sort_values('Date', inplace = True)
 
